@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="./JavaScript/JavaScript_2.js" defer></script>
+        <link rel="Stylesheet" href="./CSS/CSS_1.css"> 
+    </head>
+    
+    <body>
+        <h2>HTML Forms</h2>
+
+        <div>
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="england">England</option>
+                <option value="scotland">Scotland</option>
+                <option value="wales">Wales</option>
+                <option value="ireland">Ireland</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        
+        <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    </body>
+</html> 

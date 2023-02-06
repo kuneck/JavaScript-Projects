@@ -45,6 +45,24 @@ function hero_function() {
     document.getElementById("Output").innerHTML = hero_output;
 }
 
+function assemble_function() {
+    var A = document.getElementsByClassName("Avengers");
+    A[0].innerHTML = "Assemble!";
+}
 
+var c = document.getElementById("Japan");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(250,125,80,0,2*Math.PI);
+ctx.lineWidth = "4";
+ctx.stroke();
+ctx.fillStyle = "#FF0000";
+ctx.fill();
+
+var grd = ctx.createLinearGradient(1, 250, 250, 500);
+grd.addColorStop(0, "rgba(236, 236, 236, 0.5");
+grd.addColorStop(1, "rgba(210, 50, 50, 0.5");
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,500,250);
 
 
